@@ -4,7 +4,18 @@
 # returns whether or not (e.g., a boolean) the length of one argument is greater
 # than or equal to twice the length of the other.
 # Hint: compare the length difference to the length of the smaller string
-
+first_name <- "Hiahahahhahaahahahaha"
+second_name <- "Bye"
+is_twice_as_long <- function(first_name, second_name) {
+  double_second_name <- 2 * nchar(second_name)
+  nchar(first_name)
+  if (nchar(first_name) >= double_second_name) {
+    is_longer <- TRUE
+  } else {
+    is_longer <- FALSE
+  }
+  return (is_longer)
+}
 
 # Call your `is_twice_as_long` function by passing it different length strings
 # to confirm that it works. Make sure to check when _either_ argument is twice
